@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiesta de Halloween</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/zombi.ico">
+    <script src="javasrips/funciones.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="titulo">Fiesta de halloween</h1>
+        <audio id="sonido">
+            <source src="sonido/fantasma.mp3" type="audio/mpeg">
+        </audio>
+            <audio id="ruidomurcielago">
+                <source src="sonido/murcielago.mp3" type="audio/mpeg">
+            </audio>
+        <audio id="tension">
+            <source src="sonido/tension.mp3" type="audio/mpeg">
+        </audio>
+        <img id="fantasma" src="imagenes/fantasma.gif" height="300" onclick="ocultar('fantasma');parar('sonido')">
+        <div id="ventana" onclick="mostrar('fantasma');sonar('sonido')"></div>
+
+        <img id="murcielago" src="imagenes/murcielago.gif" height="400" onclick="ocultar('murcielago');parar('ruidomurcielago')">
+        <div id="Luna" onclick="mostrar('murcielago');sonar('ruidomurcielago')"></div>
+
+        <img id="carta" src="imagenes/invitación.jpg" height="600" onclick="ocultar('carta');parar('tension')">
+        <img id="logo" src="/imagenes/logotipo.png" height="200" onclick="mostrar('carta');sonar('tension')">
+        
+    </div>    
+</body>
+</html>
